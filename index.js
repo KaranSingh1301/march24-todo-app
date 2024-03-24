@@ -237,7 +237,7 @@ app.post("/create-item", isAuth, async (req, res) => {
 app.get("/read-item", isAuth, async (req, res) => {
   const username = req.session.user.username;
   const SKIP = Number(req.query.skip) || 0;
-  const LIMIT = 3;
+  const LIMIT = 5;
 
   try {
     //mongodb aggregate
